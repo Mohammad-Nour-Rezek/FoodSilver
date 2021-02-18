@@ -1,8 +1,23 @@
-﻿@{
+﻿@model IEnumerable<FoodSilver.Data.Models.Restaurant>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
-    <p class="lead">Hello</p>    
+    @*@DateTime.Now.Year*@
+
+    @*before directive*@
+    @*<div>There are @Enumerable.Count(Model) number of restaurants in my list.</div>*@
+
+    @*after directive*@
+    <div>There are @Model.Count() number of restaurants in my list.</div>
 </div>
+
+<ul>
+    @foreach (var restaurant in Model)
+    {
+        <li>@restaurant.Name</li>
+    }
+</ul>
