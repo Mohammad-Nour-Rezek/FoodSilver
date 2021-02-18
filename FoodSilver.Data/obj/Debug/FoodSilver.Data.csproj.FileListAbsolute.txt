@@ -1,0 +1,6 @@
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\FoodSilver.Data.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\FoodSilver.Data.pdb
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.csprojAssemblyReference.cache
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.csproj.CoreCompileInputs.cache
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.pdb
