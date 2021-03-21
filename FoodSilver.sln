@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSilver.Web", "FoodSilve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSilver.Data", "FoodSilver.Data\FoodSilver.Data.csproj", "{476A93E0-5C47-42C6-9FF4-B9D67C495C9B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{69040EE3-E8D5-4EF8-8AFD-D9D0C750CC03}"
+	ProjectSection(SolutionItems) = preProject
+		Summary.md = Summary.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
