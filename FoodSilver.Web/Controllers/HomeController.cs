@@ -11,9 +11,9 @@ namespace FoodSilver.Web.Controllers
     {
         IRestaurantData db;
 
-        public HomeController()
+        public HomeController(IRestaurantData restaurantData)
         {
-            db = new InMemoryRestaurantData();
+            this.db = restaurantData;
         }
 
         public ActionResult Index()
