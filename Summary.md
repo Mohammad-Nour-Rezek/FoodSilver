@@ -33,9 +33,12 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - now for ex. when we call the static method 'RegisterBundles' it will register all the routes inside this collection 'BundleCollection' and when the browser call the route will get the minified version like: https://localhost:44373/Content/css
 - we add routes to the 'RouteCollection' that tells the mvc what to do with each route request
 - in addition to .cs configuration files there is one important XML based config file 'Web.config' and inside of it there is:
-  - - bindingRedirect: to use another version of assembly if the othe is not exist
+  - bindingRedirect: to use another version of assembly if the othe is not exist
     - compiler: config for .cs and .vb files
     - targetFramework: that is .net 4.7.2
     - appSettings: here we can put any setting like: UnobtrusiveJavaScriptEnabled, ClientValidationEnabled for front end.
       - so here we cant tell the app what db to use, what message queue to use, address for other web service that the app need to use
         - so every app setting need a key and a value for ex.: "<add key='message' value='hello' >" and we can reach this value using configurationmanager.appsitting['key'] dictionary
+- Dependency Injection: to use the inversion of controll princeaple of SOLID we will inject a type that implement the service insted of we instantiate it hard coding and let the controller depend on that object who implement it so we need Inversion of Controll container this container know how to build and analyse objects like HomeController to understand what dependencies are requiered and what to inject when the controller say's please give me an object implement this high level object instance HomeController(IRestaurantData db) so we will configer IoC container to instantiate the controller and pass the parameter to it
+  - we will add on this proj ref the nuget autofac.mvc5 pkg
+  - now we will ad a .cs config for the container

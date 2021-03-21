@@ -16,6 +16,8 @@ namespace FoodSilver.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            // like other config
+            ContainerConfig.RegisterContainer();
         }
     }
 }
