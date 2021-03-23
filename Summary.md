@@ -44,4 +44,9 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
   - now we will ad a .cs config for the container
 
 - in web api there is no action specify in the url and this is the diffirance to regular
-  - the actions is: Get, Post, Put, Delete 
+  - the actions is: Get, Post, Put, Delete
+  - system.web.http is the primary namespace for api
+
+- we can see all packages in packages.config
+
+- we can try this in postman, and we can try this in command prompt using: curl https://localhost:44373/api/restaurants -H "Accept: application/json" /\/\/\/\/\ or xml, H for header

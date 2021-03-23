@@ -24,7 +24,8 @@ namespace FoodSilver.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             // like other config
-            ContainerConfig.RegisterContainer();
+            // 'GlobalConfiguration.Configuration' for api
+            ContainerConfig.RegisterContainer(GlobalConfiguration.Configuration);
         }
     }
 }
