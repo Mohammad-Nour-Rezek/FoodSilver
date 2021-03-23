@@ -99,3 +99,12 @@ F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Memory.xml
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Numerics.Vectors.xml
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Threading.Tasks.Extensions.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Net.Http.Formatting.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Web.Http.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Web.Http.WebHost.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Net.Http.Formatting.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Web.Http.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Web.Http.WebHost.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\Autofac.Integration.WebApi.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\Autofac.Integration.WebApi.pdb
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\Autofac.Integration.WebApi.xml
