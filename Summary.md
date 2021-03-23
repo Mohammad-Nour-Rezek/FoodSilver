@@ -42,3 +42,6 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - Dependency Injection: to use the inversion of controll princeaple of SOLID we will inject a type that implement the service insted of we instantiate it hard coding and let the controller depend on that object who implement it so we need Inversion of Controll container this container know how to build and analyse objects like HomeController to understand what dependencies are requiered and what to inject when the controller say's please give me an object implement this high level object instance HomeController(IRestaurantData db) so we will configer IoC container to instantiate the controller and pass the parameter to it
   - we will add on this proj ref the nuget autofac.mvc5 pkg
   - now we will ad a .cs config for the container
+
+- in web api there is no action specify in the url and this is the diffirance to regular
+  - the actions is: Get, Post, Put, Delete 
