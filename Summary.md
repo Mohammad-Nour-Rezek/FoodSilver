@@ -50,3 +50,5 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - we can see all packages in packages.config
 
 - we can try this in postman, and we can try this in command prompt using: curl https://localhost:44373/api/restaurants -H "Accept: application/json" /\/\/\/\/\ or xml, H for header
+
+- if we change the route id to key in the config the mvc will try to make url to the Details link so it will put the id in the query string
