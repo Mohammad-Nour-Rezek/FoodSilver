@@ -19,10 +19,18 @@ namespace FoodSilver.Data.Services
             };
         }
 
+        public Restaurant Get(int id)
+        {
+            // default value is null [ref type]
+            return restaurants.FirstOrDefault(r => r.Id == id);
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
             // using Linq ns
             return restaurants.OrderBy(r => r.Name);
         }
+
+        
     }
 }
