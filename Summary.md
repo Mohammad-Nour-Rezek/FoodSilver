@@ -59,4 +59,6 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - if we post a req to a controller without a post action result will get the same get action result, the form method property will be the same url of the create page
 
 - when request is send to server for post mvc will understand that it look for object of type Restaurant and it has id, name, cuisine and to bind these properties it search for name='' prop in the html element and the value associated with it, this process known as model binding
-- 
+
+- post-redirect-get pattern to avoid stay in the same page
+- duplicate transaction: if the user send a post req and still in the same page and his information still in the form, when he reload the page the browser wil ask him to resend the information again
