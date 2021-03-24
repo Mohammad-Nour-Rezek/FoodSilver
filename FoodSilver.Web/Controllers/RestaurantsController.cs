@@ -1,4 +1,5 @@
-﻿using FoodSilver.Data.Services;
+﻿using FoodSilver.Data.Models;
+using FoodSilver.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,9 @@ namespace FoodSilver.Web.Controllers
         {
             this.db = db;
         }
-        
+
         // GET: Restaurants
+        [HttpGet]
         public ActionResult Index()
         {
             var model = db.GetAll();
@@ -24,6 +26,7 @@ namespace FoodSilver.Web.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public ActionResult Details(int id)
         {
             var model = db.Get(id);
@@ -33,6 +36,22 @@ namespace FoodSilver.Web.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        //
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Restaurant restuarant)
+        {
+            db.Add(restuarant);
+
+            return View();
         }
     }
 }

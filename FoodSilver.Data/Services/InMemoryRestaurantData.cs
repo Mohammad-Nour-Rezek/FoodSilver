@@ -19,6 +19,12 @@ namespace FoodSilver.Data.Services
             };
         }
 
+        public void Add(Restaurant restaurant)
+        {
+            restaurant.Id = restaurants.Max(r => r.Id) + 1;
+            restaurants.Add(restaurant);
+        }
+
         public Restaurant Get(int id)
         {
             // default value is null [ref type]

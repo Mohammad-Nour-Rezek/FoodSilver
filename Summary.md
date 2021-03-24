@@ -52,3 +52,11 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - we can try this in postman, and we can try this in command prompt using: curl https://localhost:44373/api/restaurants -H "Accept: application/json" /\/\/\/\/\ or xml, H for header
 
 - if we change the route id to key in the config the mvc will try to make url to the Details link so it will put the id in the query string
+
+- view model: doing all operations on data that need to render in the view, so may be the view need data from more than one entity or [model] so view model is prepare the data needed for the view
+- 'CSRF' Cross-site request forgeries using AntiForgeryToken, if site require authentications and use cookies
+
+- if we post a req to a controller without a post action result will get the same get action result, the form method property will be the same url of the create page
+
+- when request is send to server for post mvc will understand that it look for object of type Restaurant and it has id, name, cuisine and to bind these properties it search for name='' prop in the html element and the value associated with it, this process known as model binding
+- 
