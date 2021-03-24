@@ -13,5 +13,7 @@ namespace FoodSilver.Data.Services
         // need import cuz in different namespaces
         IEnumerable<Restaurant> GetAll();
         Restaurant Get(int id);
+        void Add(Restaurant restaurant);
+        void Update(Restaurant restaurant);
     }
 }
