@@ -28,7 +28,15 @@ namespace FoodSilver.Web
 
             // we will use the instance of 'InMemoryRestaurantData' as a singleton but this will never work for multiple users cuz they will edit the same object but will work for now
             // we can config it to creat a new instance on each http req also
-            builder.RegisterType<InMemoryRestaurantData>().As<IRestaurantData>().SingleInstance();
+            //builder.RegisterType<InMemoryRestaurantData>().As<IRestaurantData>().SingleInstance();
+            builder.RegisterType<SqlRestaurantData>()
+                   .As<IRestaurantData>()
+                    // we use this pattern if the component implement 'unit of work': create a particular component and allowed it to be around for a single HTTP req and after performing all operation for a particular req from a user, when the req is over throw it away and then create new one for new req
+                   .InstancePerRequest(); // create an instance of SqlRestaurantData with each comming request
+
+            // register the DbContext object in the container and now EF need connection string in web.config, when component start with req the instance will look to connection string when instantiate the class with the same class name
+            // type SqlRestaurantData need to injected in the constructor
+            builder.RegisterType<FoodSilverDbContext>().InstancePerRequest();
 
             // tells mvc5 to use this container to resolve DI
             var container = builder.Build();

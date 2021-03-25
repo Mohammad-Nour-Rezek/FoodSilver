@@ -108,3 +108,8 @@ F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\System.Web.Http.Web
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\Autofac.Integration.WebApi.dll
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\Autofac.Integration.WebApi.pdb
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\Autofac.Integration.WebApi.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\EntityFramework.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\EntityFramework.SqlServer.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\FoodSilver.Data.dll.config
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\EntityFramework.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Web\bin\EntityFramework.SqlServer.xml
