@@ -4,3 +4,12 @@ F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.D
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.csproj.CoreCompileInputs.cache
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.dll
 F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.pdb
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\FoodSilver.Data.dll.config
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\EntityFramework.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\EntityFramework.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.csproj.CopyComplete
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.Migrations.InitialCreate.resources
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.csproj.GenerateResource.cache
+F:\VS 2019 Web Projects\github\FoodSilver\FoodSilver.Data\obj\Debug\FoodSilver.Data.Migrations.AddMaxLengthtoName.resources

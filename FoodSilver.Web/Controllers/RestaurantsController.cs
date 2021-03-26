@@ -98,5 +98,29 @@ namespace FoodSilver.Web.Controllers
 
             return View(restaurant);
         }
+
+        // we dont want to modify any data using get req so will ask for confirm here and if confirmed will send a post req
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            var model = db.Get(id);
+
+            if (model == null)
+            {
+                return View("NotFound");
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]        
+        public ActionResult Delete(int id, FormCollection formCollection) // we use FormCollection cuz we have two methods with the same signiture, form collection contain form vlue as key-value pairs, we will not use it but mvc will generate it
+        //public ActionResult Delete(Restaurant restaurant)
+        {
+            db.Delete(id);
+
+            return RedirectToAction("Index");
+        }
     }
 }
