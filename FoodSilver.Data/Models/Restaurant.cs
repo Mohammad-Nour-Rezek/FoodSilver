@@ -25,11 +25,16 @@ namespace FoodSilver.Data.Models
         //[DataType(DataType.Password)]
         //[Range(0, 10)]
         [Required] // not null in db
-        //[MaxLength(255)]
+        [MaxLength(255)]
         public string Name { get; set; }
         
         [Display(Name = "Type of food")]
         // to enforce a limited number of choices to user we use a 'enum' type
         public CuisineType Cuisine { get; set; }
+
+        // any edit on db need migration in EF-Code-First
+        // first time in Package Manager Consol: enable-migrations --> [choose FoodSilver.Data] this will create a migration folder in the solution
+        // add-migration message-here
+        // update-database
     }
 }
