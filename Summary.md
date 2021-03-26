@@ -62,3 +62,13 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 
 - post-redirect-get pattern to avoid stay in the same page
 - duplicate transaction: if the user send a post req and still in the same page and his information still in the form, when he reload the page the browser wil ask him to resend the information again
+
+- localDB: installed with VS and it's a real sql server db but not for production
+  - to use: 1- check if it exist using developer vs command prompt: sqllocaldb, sqllocaldb i [[for db instance information]], sqllocaldb i mssqllocaldb [[more information]]
+  - we can see it in the sql server object explorer 
+
+- to install EF use Nuget and install it in the two projects so right-click on the solution and do it ..., see package.config and web.config [ConfigSection, entityFramework]
+
+- DbContext: is EF base class and gate way to db
+
+- because i expext the req com from a browser so just 2 http verbs are needed: Get, Post, when i work with api i will need other verbs
