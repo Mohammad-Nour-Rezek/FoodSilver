@@ -23,6 +23,14 @@ namespace FoodSilver.Data.Services
             db.SaveChanges(); // here when we commit changes happens, DbContext use this statement to construct insert statement
         }
 
+        public void Delete(int id)
+        {
+            var restaurant = db.Restaurants.Find(id); //Find will get a record based on PK given with the best performance (it eill look at the cach version first) or return null
+            
+            db.Restaurants.Remove(restaurant);
+            db.SaveChanges();
+        }
+
         public Restaurant Get(int id)
         {
             return db.Restaurants.FirstOrDefault(r => r.Id == id);

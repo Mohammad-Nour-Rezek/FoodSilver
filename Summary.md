@@ -70,3 +70,5 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - to install EF use Nuget and install it in the two projects so right-click on the solution and do it ..., see package.config and web.config [ConfigSection, entityFramework]
 
 - DbContext: is EF base class and gate way to db
+
+- because i expext the req com from a browser so just 2 http verbs are needed: Get, Post, when i work with api i will need other verbs
