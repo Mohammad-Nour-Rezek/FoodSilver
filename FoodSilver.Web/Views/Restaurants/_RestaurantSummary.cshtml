@@ -1,0 +1,14 @@
+﻿@model FoodSilver.Data.Models.Restaurant
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title">
+            @Model.Name
+        </div>
+    </div>
+    <div class="panel-body">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Details", "Details", new { id = Model.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
+    </div>
+</div>

@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
+    //Layout = null;
 }
 
 <h2>Index</h2>
@@ -9,7 +10,15 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+@foreach (var item in Model)
+{
+    //now this partial view contain static informations like: address, ..., if we want to have Model prop in it like each restaurant: pass it
+    // we want to use partial view insted of a table
+    @Html.Partial("_RestaurantSummary", item)
+}
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -17,7 +26,10 @@
         <th></th>
     </tr>
 
+    @@FoodSilver
+
 @foreach (var item in Model) {
+    @:hello
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
@@ -30,4 +42,9 @@
     </tr>
 }
 
-</table>
+</table>*@
+
+@* section directive to show in the layout render section named footer *@
+@section footer { 
+    <div>This is a custom footer</div>
+}
