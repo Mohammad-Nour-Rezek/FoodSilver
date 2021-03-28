@@ -29,10 +29,19 @@
         </div>
     </div>
     <div class="container body-content">
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-info">
+                @TempData["Message"]
+            </div>
+        }
+
+        @*when reach this point compiler will go to index.cshtnl for ex and compile it and put it here*@        
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            @RenderSection("footer", required: false) @*register a section to render and choose if it will be requierd or not, if there is no views inside the application have 'footer' section must put requiered to false*@
         </footer>
     </div>
 

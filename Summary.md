@@ -72,3 +72,17 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - DbContext: is EF base class and gate way to db
 
 - because i expext the req com from a browser so just 2 http verbs are needed: Get, Post, when i work with api i will need other verbs
+
+##
+
+- Model: is object controller build for the view
+- @model is a directive
+- anything will do in razor is by default will be html encoded to prevent XSS attack, @Html.Raw() --> without encoding
+- if we inside @{} C# block of code and we need towrite some text use: @:text
+- to escape and show @ at the very first: @@text
+- @(expression) if we have like foodsilver@hotmail.com@Model.Count() --> foodsilver@hotmail.com@(Model.Count())
+- Layout = null; --> overwrite layout path to null so it produced without css, bootstrap, ...
+- partial view is for reuse part of the view, name convention start with '_test'
+- 2 type of view content and partial view
+- ViewBag and TempData: ViewBag: between views used in the same req, TempData: between controller actions (accros req) to any view
+- TempData: strore data on the server side that will be around for one more request before it's removed means if the page for wx show a message if refresh it will not show it again
