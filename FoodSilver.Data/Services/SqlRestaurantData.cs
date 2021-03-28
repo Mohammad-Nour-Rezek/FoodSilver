@@ -53,9 +53,9 @@ namespace FoodSilver.Data.Services
         {
             // EF will know when any edit on object prop happen and whan do SaveChanges it will generate update statement and push a db transaction
             // here the last user hit save button will be the last person will do the update
-            var r = Get(restaurant.Id);
-            r.Name = restaurant.Name;
-            r.Cuisine = restaurant.Cuisine;
+            //var r = Get(restaurant.Id);
+            //r.Name = restaurant.Name;
+            //r.Cuisine = restaurant.Cuisine;
 
             // the best approach if i have multiple user in the app (that maybe updating the same restaurant)
             // so we will implement a feature 'Optimistic Concurrency'
