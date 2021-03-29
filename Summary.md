@@ -86,3 +86,24 @@ after build the project will get --> foorSilver.web.dll assembly for each projec
 - 2 type of view content and partial view
 - ViewBag and TempData: ViewBag: between views used in the same req, TempData: between controller actions (accros req) to any view
 - TempData: strore data on the server side that will be around for one more request before it's removed means if the page for wx show a message if refresh it will not show it again
+
+##
+
+- pre-installed front-end framework:
+  - jQuery
+  - jQuery Validation
+  - modernizer for old browsers to make sure javascript all features works
+  - Bootstrap
+
+- preffered using NuGet for back-end libraries like: EF, NuGet was optimized for .Net
+- for front-end libraries preffered using: 1-) npm or 2-) using vs: right click on the project -> add -> client side library -> type the lib name
+  - this will add file named libman.json [library manager] that record added and updated client-side libraries, we can change version or write lib in it and vs will update it without using the client manager
+  - and add lib folder with the lib-name folder in it
+
+- if HTTP v2 used between client and server bundling is not important but it is in v1.0 and v1.1
+- IIS on in windows server 2016 and later support v2 of Http protocol 
+- bundle will put all files in single download and minify them to be small and simple
+
+- because of server side validation [required, maxlength, ...] and razor html helpers in client side in the element prop there is all validation meta data exist but it need to active
+- to active client-side validation there is two lib: jquery.validation and jquery.validation.unobtrusive: this provided by microsoft and it act like bridge between data-{attributes} and jquery.validation lib
+- to let it work as scaffolding: check add reference scripts in the add view box 
