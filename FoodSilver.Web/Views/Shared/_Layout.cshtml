@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    @* add <link> elem in the head for all css in the bundle, Styles: for style bundle *@
     @Styles.Render("~/Content/css")
+
+    @* add <script> elem for all files in the bundle in the top of the page, Scripts: for script bundle *@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -45,6 +48,7 @@
         </footer>
     </div>
 
+    @* add <script> elem for all files in the bundle in the bottom of the page *@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
